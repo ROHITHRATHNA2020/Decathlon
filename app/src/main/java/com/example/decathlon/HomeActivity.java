@@ -28,8 +28,9 @@ public class HomeActivity extends AppCompatActivity {
     private void setRecyclerData() {
         Adapter adapter = new Adapter(modelList);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false);
+        LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(this,RecyclerView.HORIZONTAL,false);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setLayoutManager(linearLayoutManager1);
         Adapter adapter1 = new Adapter(modelList1);
         recyclerView2.setAdapter(adapter1);
         recyclerView2.setLayoutManager(linearLayoutManager);
